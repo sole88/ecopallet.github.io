@@ -4,49 +4,47 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header{
+.nav{
+    background: rgb(233, 246, 236);
     height: 100px;
-    background: whitesmoke;
-    padding: 0 50px;
-    color:rgb(98, 98, 98);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    color: #258f23;
 }
-.logo{
-    max-height: 100%;
-    border-radius: 100%;
-
-}
-.menu a{
-    color: rgb(46, 42, 42);
+.navMenu a{
+    max-width: 15vw;
+    color: rgb(22, 26, 22);
     text-transform: uppercase; 
     text-align: center;
     text-decoration: none;
     padding: 0 10px;
     transition: 0,4s;
 }
-.mostrarMenu,
-.esconderMenu{
-    font-size: 30px;
-    cursor: pointer;
-    display: none; 
-    transition: 0,4s;
-
+.navMenu a:hover{
+    color: #258f23;
 }
-.mostrarMenu{
-    order: 1;
+.navContenedor{
+    display: flex;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
 }
-
-.menu a:hover,
-.mostrarMenu:hover,
-.esconderMenu:hover{
-    color: rgb(105, 186, 144);
+.logo{
+    height: 100px;
+    border-radius: 100%;   
 }
-#check{
+.navLabel, .navInput{
     display: none;
-} 
-
+}
+.navMenu{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3em;
+}
+navItem{
+    color: #258f23;
+    text-decoration: none;
+}
 #huerta{
     padding: 50px 50px;
     display: flex;
@@ -84,38 +82,33 @@ huerta div p{
     background-color: #258f23;
     color: white;
 }
+@media (max-width: 700px){
+    .navLabel{
+        font-size: 30px;
+        display: block;
+        cursor: pointer;
 
-@media(max-width: 768px){
-    .mostrarMenu
-    .esconderMenu{
-        display: block;
     }
-    .menu{
+    .navMenu{
         position: fixed;
+        top: 80px;
+        bottom: 0;
+        background: #96c895;
         width: 100%;
-        height: 100vh;
-        background: rgb(173, 173, 173);
-        right: -100;
-        top: 0;  
-        text-align: center;
-        padding: 100px 0px;
-        z-index: 100;
-        transition: 0.8s;    
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+        
     }
-    .menu a{
-        display: block;
-        padding: 20px;
-    }
-    .esconderMenu{
-        position: absolute;
-        top: 40px;
-        right: 70px;
-    }
-    #check:checked ~ .menu{
-        right: 0;
+    .navInput:checked + .navMenu{
+        clip-path: circle(100% at center);
     }
     #huerta{
         flex-direction: column;
     }
-
 }
+
