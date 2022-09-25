@@ -6,20 +6,21 @@
 
 header{
     height: 100px;
-    background: rgb(225, 223, 223);
+    background: whitesmoke;
     padding: 0 50px;
-    color:white;
+    color:rgb(98, 98, 98);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .logo{
     max-height: 100%;
+    border-radius: 100%;
 
 }
-.menu{
-    color: white;
-    /* text-transform: uppercase; */
+.menu a{
+    color: rgb(46, 42, 42);
+    text-transform: uppercase; 
     text-align: center;
     text-decoration: none;
     padding: 0 10px;
@@ -29,7 +30,7 @@ header{
 .esconderMenu{
     font-size: 30px;
     cursor: pointer;
-    display: none;
+    display: none; 
     transition: 0,4s;
 
 }
@@ -40,13 +41,52 @@ header{
 .menu a:hover,
 .mostrarMenu:hover,
 .esconderMenu:hover{
-    color: aquamarine;
+    color: rgb(105, 186, 144);
 }
 #check{
     display: none;
+} 
+
+#huerta{
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
 }
+#huerta img{
+    max-width: 30vw;
+    max-height: 30vh;
+}
+#huerta div{
+    padding: 30px 30px;
+}
+#huerta div h4{
+    color: rgb(82, 125, 111);
+    font-size: 20px;
+    margin: 15px 0px;
+}
+huerta div p{
+    color: grey;
+    font-size: 18px;
+}
+.botonVerFotos{
+    display: inline-block;
+    text-decoration: none;
+    color: #258f23;
+    padding: 10px 30px;
+    border: 3px solid #258f23;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: all 0.4s;
+}
+.botonVerFotos:hover{
+    background-color: #258f23;
+    color: white;
+}
+
 @media(max-width: 768px){
-    .mostrarMenu,
+    .mostrarMenu
     .esconderMenu{
         display: block;
     }
@@ -54,8 +94,7 @@ header{
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: grey;
-        left: 0;
+        background: rgb(173, 173, 173);
         right: -100;
         top: 0;  
         text-align: center;
@@ -63,14 +102,20 @@ header{
         z-index: 100;
         transition: 0.8s;    
     }
-    menu a{
+    .menu a{
         display: block;
         padding: 20px;
     }
     .esconderMenu{
         position: absolute;
         top: 40px;
-        right: 40px;
+        right: 70px;
+    }
+    #check:checked ~ .menu{
+        right: 0;
+    }
+    #huerta{
+        flex-direction: column;
     }
 
 }
