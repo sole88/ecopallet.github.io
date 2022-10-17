@@ -1,3 +1,4 @@
+
 *{
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -72,26 +73,26 @@ navItem{
     color: #258f23;
     text-decoration: none;
 }
-#huerta{
+#consejos{
     padding: 50px 50px;
     display: flex;
     justify-content: center;
     text-align: center;
 
 }
-#huerta img{
+#consejos img{
     max-width: 30vw;
     max-height: 30vh;
 }
-#huerta div{
+#consejos div{
     padding: 30px 30px;
 }
-#huerta div h4{
+#consejos div h4{
     color: rgb(82, 125, 111);
     font-size: 20px;
     margin: 15px 0px;
 }
-huerta div p{
+consejos div p{
     color: grey;
     font-size: 18px;
 }
@@ -157,8 +158,7 @@ footer{
     .navInput:checked + .navMenu{
         clip-path: circle(100% at center);
     }
-    #huerta{
+    #consejos{
         flex-direction: column;
     }
 }
-
