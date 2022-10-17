@@ -275,6 +275,12 @@ hr{
     text-decoration: none;
 }
 
+.enlace:hover{
+    background-color:#96c895;
+    color: #258f23;
+    font-weight: bold;
+}
+
 h2{
     text-align: center;
 }

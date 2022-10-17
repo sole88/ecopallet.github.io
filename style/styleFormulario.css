@@ -6,6 +6,7 @@
 html{
     font-size: 1rem;
     height: 100%;
+    
 }
 
 body,header,main,footer {
@@ -19,6 +20,15 @@ body {
     font-family: "Lato",sans-serif;
     color: black;
     font-size: 14px;
+    background-image: url("/Imagenes/back-form.jpg");
+    background-image: no-repeat;
+    background-image: fixed;
+    background-image: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+   
 }
 
 main{
@@ -161,3 +171,11 @@ footer{
         flex-direction: column;
     }
 }
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
