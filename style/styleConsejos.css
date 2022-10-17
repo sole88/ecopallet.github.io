@@ -125,10 +125,6 @@ footer a img{
 
 footer{
     background-color:  rgb(233, 246, 236); 
-    /* width: 100%; 
-    display: flex; 
-    flex-wrap: wrap; 
-    align-self: flex-end; */
     
 }
 
@@ -161,4 +157,7 @@ footer{
     #consejos{
         flex-direction: column;
     }
+}
+@media (max-width: 420px){
+    body{background-color: #96c895;}
 }

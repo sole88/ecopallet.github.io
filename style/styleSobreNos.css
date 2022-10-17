@@ -72,42 +72,35 @@ navItem{
     color: #258f23;
     text-decoration: none;
 }
-#huerta{
-    padding: 50px 50px;
+#fotos{
+    padding: 40px 40px;
     display: flex;
     justify-content: center;
     text-align: center;
 
 }
-#huerta img{
+#fotos img{
     max-width: 30vw;
     max-height: 30vh;
 }
-#huerta div{
-    padding: 30px 30px;
+#fotos div{
+    padding: 3vh vw;
 }
-#huerta div h4{
-    color: rgb(82, 125, 111);
-    font-size: 20px;
-    margin: 15px 0px;
+h1{
+    font-family: 'Signika', sans-serif;
+    font-size: xx-large;
+    font-weight: 800;
+    display: flexbox;
+    text-align: center;
 }
-huerta div p{
-    color: grey;
-    font-size: 18px;
-}
-.botonVerFotos{
-    display: inline-block;
-    text-decoration: none;
-    color: #258f23;
-    padding: 10px 30px;
-    border: 3px solid #258f23;
-    border-radius: 30px;
-    margin-top: 15px;
-    transition: all 0.4s;
-}
-.botonVerFotos:hover{
-    background-color: #258f23;
-    color: white;
+
+p{
+    font-family: 'Signika', sans-serif;
+    font-weight: 500;
+    font-size: large;
+    display: flex;
+    text-align: center;
+   
 }
 
 footer a img{
@@ -123,12 +116,7 @@ footer a img{
 }
 
 footer{
-    background-color:  rgb(233, 246, 236); 
-    /* width: 100%; 
-    display: flex; 
-    flex-wrap: wrap; 
-    align-self: flex-end; */
-    
+    background-color:  rgb(233, 246, 236);   
 }
 
 
@@ -157,7 +145,10 @@ footer{
     .navInput:checked + .navMenu{
         clip-path: circle(100% at center);
     }
-    #huerta{
+    #fotos{
         flex-direction: column;
     }
+}
+@media (max-width: 420px){
+    body{background-color: #96c895;}
 }

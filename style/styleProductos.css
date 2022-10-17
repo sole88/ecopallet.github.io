@@ -160,5 +160,9 @@ footer{
     #huerta{
         flex-direction: column;
     }
+    
+}
+@media (max-width: 420px){
+    body{background-color: #96c895;}
 }
 
