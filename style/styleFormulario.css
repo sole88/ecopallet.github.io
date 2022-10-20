@@ -172,6 +172,12 @@ footer{
     }
 }
 
+
+@media (max-width: 420px){
+    body{background-color: #96c895;}
+}
+
+
 .container{
     display: flex;
     align-items: center;

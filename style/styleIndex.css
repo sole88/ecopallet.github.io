@@ -157,6 +157,12 @@ img { height:351px;
         flex-direction: column;
     }
 
+    
+@media (max-width: 420px){
+    body{background-color: #96c895;}
+}
+
+
     /* carrusel*/
 .slider-frame img {
 	object-fit: contain;
