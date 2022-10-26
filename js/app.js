@@ -1,5 +1,5 @@
 
-document.getElementById("formulario").addEventListener("submit", (e) => {
+document.getElementById("formulario").addEventListener("submit", (e) =>{
   e.preventDefault(); //evita envio de formulario
   const usuario = document.getElementById('usuario');
   const email = document.getElementById('email');
@@ -51,20 +51,19 @@ document.getElementById("formulario").addEventListener("submit", (e) => {
       usuario.focus();
       return false;
     }
-    else {
+    else{
       document.getElementById("men").innerHTML=""
      }
 
-  
-  return (window.location.href = "registrado.html");
-})
 
+
+  })
+  
+
+//expresiones regulares
 const telefonoValido = telefono => {
   return (/^\d{10}$/.test(telefono)) ;
   }
 const emailValido = email => {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
-
-
-

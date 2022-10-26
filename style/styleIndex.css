@@ -40,14 +40,9 @@ footer a img{
 }
 
 .redes{
-   
+    background: rgb(233, 246, 236);
     text-align: center;
 }
-
-footer{
-    background-color:  rgb(233, 246, 236); 
-}
-
 
 /* aplica a todos los div hijos del main (contenido principal) */
 main>div{
