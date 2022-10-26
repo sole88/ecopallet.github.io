@@ -54,9 +54,6 @@ document.getElementById("formulario").addEventListener("submit", (e) =>{
     else{
       document.getElementById("men").innerHTML=""
      }
-
-
-
   })
   
 
