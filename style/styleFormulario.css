@@ -50,6 +50,7 @@ main{
     text-decoration: none;
     padding: 0 10px;
     transition: 0,4s;
+    font-size: 14px;
 }
 .navMenu a:hover{
     color: #258f23;
@@ -78,46 +79,9 @@ main{
     grid-auto-flow: column;
     gap: 3em;
 }
-navItem{
+.navItem{
     color: #258f23;
     text-decoration: none;
-}
-#huerta{
-    padding: 50px 50px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-
-}
-#huerta img{
-    max-width: 30vw;
-    max-height: 30vh;
-}
-#huerta div{
-    padding: 30px 30px;
-}
-#huerta div h4{
-    color: rgb(82, 125, 111);
-    font-size: 20px;
-    margin: 15px 0px;
-}
-huerta div p{
-    color: grey;
-    font-size: 18px;
-}
-.botonVerFotos{
-    display: inline-block;
-    text-decoration: none;
-    color: #258f23;
-    padding: 10px 30px;
-    border: 3px solid #258f23;
-    border-radius: 30px;
-    margin-top: 15px;
-    transition: all 0.4s;
-}
-.botonVerFotos:hover{
-    background-color: #258f23;
-    color: white;
 }
 
 footer a img{
