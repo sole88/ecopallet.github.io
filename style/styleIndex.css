@@ -112,6 +112,16 @@ img { height:351px;
     border-radius: 100%;   
 }
 
+     
+@keyframes rotate {from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}}
+   
+.logo{
+    -webkit-animation: 3s rotate linear infinite;
+    animation: 3s rotate ;
+    
+}
+
 .navLabel, .navInput{
     display: none;
 }

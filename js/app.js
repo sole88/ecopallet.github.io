@@ -64,6 +64,8 @@ const telefonoValido = telefono => {
 const emailValido = email => {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
+
+/*
 const $form = document.querySelector('#form')
 $form.addEventListener('submit', handleSubmit)
 
@@ -86,4 +88,4 @@ async function handleSubmit(event) {
     });
     
   }
-}
+}*/
