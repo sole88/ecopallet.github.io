@@ -141,6 +141,7 @@ img { height:351px;
 
     }
     .navMenu{
+        Z-index: 1;
         position: fixed;
         top: 80px;
         bottom: 0;
